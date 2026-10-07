@@ -1,0 +1,92 @@
+:root {
+  --good-color: #315f9b;
+  --evil-color: #8b2e2e;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  padding-top: 1rem;
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+.page-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-intro h2 {
+  margin-bottom: 0.5rem;
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.role-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.role-card img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.role-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.role-card p {
+  margin-bottom: 0.5rem;
+}
+
+.role-card a[role="button"] {
+  margin-top: auto;
+}
+
+.good-role {
+  border-top: 5px solid var(--good-color);
+}
+
+.evil-role {
+  border-top: 5px solid var(--evil-color);
+}
+
+.role-detail {
+  display: grid;
+  grid-template-columns: minmax(250px, 400px) 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.role-detail img {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+.role-details h2 {
+  margin-bottom: 0.5rem;
+}
+
+.not-found {
+  text-align: center;
+  padding-top: 6rem;
+}
+
+@media (max-width: 700px) {
+  .role-detail {
+    grid-template-columns: 1fr;
+  }
+}
