@@ -1,10 +1,10 @@
-# WEB103 Project 1 - *Avalon Role Guide*
+# WEB103 Project 2 - *Avalon Role Guide*
 
 Submitted by: **Muhib Sheikh**
 
 About this web app: **Avalon Role Guide displays each role in the board game The Resistance: Avalon. It includes all 8 unique roles and their info.**
 
-Time spent: **8** hours
+Time spent: **6** hours
 
 ## Required Features
 
@@ -12,32 +12,27 @@ The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
 - [x] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
-- [x] **The web app displays a title**
-- [x] **The web app displays at least five unique list items, each with at least three displayed attributes (such as title, text, and image)**
-- [x] **The user can click on each item in the list to see a detailed view of it, including all database fields**
-  - [x] **Each detail view should be a unique endpoint, such as as `localhost:3000/bosses/crystalguardian` and `localhost:3000/mantislords`**
-  - [x] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation* 
-- [x] **The web app serves an appropriate 404 page when no matching route is defined**
-- [x] **The web app is styled using Picocss**
+- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
+- [x] **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
+- [x] **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
+
 
 The following **optional** features are implemented:
 
-- [x] The web app displays items in a unique format, such as cards rather than lists or animated list items
+- [ ] The user can search for items by a specific attribute
 
 The following **additional** features are implemented:
 
-<!--  -[ ] List anything else that you added to improve the site's functionality! -->
-- [x] Good and Evil roles use unique card styling
-- [x] Individual role pages use readable URL slugs
+- [ ] List anything else that you added to improve the site's functionality!
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
 
-<img src='./walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with macOS screen recorder
+GIF created with macOS Screen Recorder!
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -45,10 +40,9 @@ GIF created with macOS screen recorder
 
 ## Notes
 
-<!-- Describe any challenges encountered while building the app or any additional context you'd like to add. -->
+Describe any challenges encountered while building the app or any additional context you'd like to add.
 
-One challenge I encountered while building the app was connecting the Vite frontend to the Express backend and making sure the correct role data was displayed for each unique URL. 
-Also had some issues with get walkthrough and gif, Kap was not working, so I had to use the built in screen recording software and convert to a GIF. I tried using imgur but it would not embed, so I had to stick to the local gif.
+I was dealing with being sick the past week which greatly delayed my ability to finish this project earlier unfortunately. During the actual development, the main challenge was configuring the Render connection locally. After some trial and error, and advice from LLMs, I was able to get it working. Luckily my structure was already pretty good so I was able to keep the frontend pretty much unchanged, I just had to alias some names to match the DB.
 
 ## License
 
